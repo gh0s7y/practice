@@ -1,0 +1,15 @@
+2025-06-30 00:25:48.894677+03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTS" not found (this database is empty); SQL statement:
+SELECT * FROM STUDENTS [42104-232]
+2025-06-30 00:26:07.456596+03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+SELECT * FROM Student [42104-232]
+2025-06-30 00:26:29.617664+03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+SELECT * FROM Student [42104-232]
+2025-06-30 00:26:31.146578+03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+SELECT * FROM Student [42104-232]
+2025-06-30 00:28:29.097724+03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SAVE_STUDENT" not found (this database is empty); SQL statement:
+SELECT * FROM save_student [42104-232]
