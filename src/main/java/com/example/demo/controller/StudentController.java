@@ -4,8 +4,6 @@ import com.example.demo.model.Student;
 
 import com.example.demo.service.StudentService;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/students")
 @AllArgsConstructor
-public class DemoController {
+public class StudentController {
 
     private final StudentService service;
 
