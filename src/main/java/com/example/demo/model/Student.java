@@ -10,12 +10,9 @@ import lombok.*;
 public class Student {
     @Id
     @GeneratedValue
-    private Long ID;
     private String firstname;
     private String lastname;
     private String mentor;
     private String olympiad;
-    @Column(unique = true)
     private String StudentId;
-
 }
