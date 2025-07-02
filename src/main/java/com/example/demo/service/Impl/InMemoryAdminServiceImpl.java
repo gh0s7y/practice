@@ -46,4 +46,16 @@ public class InMemoryAdminServiceImpl implements AdminService {
     public void deleteAdmin(String adminId) {
         repository.deleteAdmin(adminId);
     }
+
+    @Override
+    public Admin loginAdmin(String username, String password) {
+        Admin admin = repository.findByUsername(username);
+        if (admin == null) {
+            throw new RuntimeException("Admin not found");
+        }
+        if (!admin.getPassword().equals(password)) {
+            throw new RuntimeException("Invalid password");
+        }
+        return admin;
+    }
 }

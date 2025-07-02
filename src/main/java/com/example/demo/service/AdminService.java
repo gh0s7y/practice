@@ -11,4 +11,5 @@ public interface AdminService {
     Admin updateAdmin(Admin admin);
     void deleteAdmin(String adminId);
     Admin findByUsername(String username);  // Новый метод для поиска по username
+    Admin loginAdmin(String username, String password);
 }

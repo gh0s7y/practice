@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Admin;
+import com.example.demo.model.dto.LoginRequest;
 import com.example.demo.service.AdminService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -43,4 +44,6 @@ public class AdminController {
     public void deleteAdmin(@PathVariable String adminId) {
         service.deleteAdmin(adminId);
     }
+
+
 }

@@ -15,4 +15,5 @@ public class Student {
     private String mentor;
     private String olympiad;
     private String StudentId;
+    private String event_level;
 }
