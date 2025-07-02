@@ -26,18 +26,4 @@ public class StudentController {
         return service.saveStudent(student);
     }
 
-    @GetMapping("/{StudentId}")
-    public Student findById(@PathVariable String StudentId){
-        return service.findById(StudentId);
-    }
-
-    @PutMapping("update_student")
-    public Student updateStudent(@RequestBody Student student){
-        return service.updateStudent(student);
-    }
-
-    @DeleteMapping("delete_student/{StudentId}")
-    public void deleteStudent(@PathVariable String StudentId){
-        service.deleteStudent(StudentId);
-    }
 }

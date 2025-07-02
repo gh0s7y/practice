@@ -9,11 +9,14 @@ import lombok.*;
 @Table(name="students")
 public class Student {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String firstname;
     private String lastname;
     private String mentor;
     private String olympiad;
+    @Column(unique = true)
     private String StudentId;
     private String event_level;
 }

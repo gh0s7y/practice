@@ -122,3 +122,6 @@ Wrong user name or password [28000-232]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	... 54 more
+2025-07-02 17:38:41.666272+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTS" not found (this database is empty); SQL statement:
+insert into students (student_id,event_level,firstname,lastname,mentor,olympiad,id) values (?,?,?,?,?,?,default) [42104-232]

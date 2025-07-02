@@ -25,25 +25,4 @@ public class AdminController {
         return service.saveAdmin(admin);
     }
 
-    @GetMapping("/{adminId}")
-    public Admin findById(@PathVariable String adminId) {
-        return service.findById(adminId);
-    }
-
-    @GetMapping("/by-username/{username}")
-    public Admin findByUsername(@PathVariable String username) {
-        return service.findByUsername(username);
-    }
-
-    @PutMapping("/update")
-    public Admin updateAdmin(@RequestBody Admin admin) {
-        return service.updateAdmin(admin);
-    }
-
-    @DeleteMapping("/delete/{adminId}")
-    public void deleteAdmin(@PathVariable String adminId) {
-        service.deleteAdmin(adminId);
-    }
-
-
 }
