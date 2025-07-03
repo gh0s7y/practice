@@ -4,6 +4,7 @@ import com.example.demo.model.Student;
 
 import com.example.demo.service.StudentService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +14,6 @@ import java.util.List;
 @RequestMapping("/api/v1/students")
 @AllArgsConstructor
 public class StudentController {
-
     private final StudentService service;
 
     @GetMapping
@@ -25,5 +25,4 @@ public class StudentController {
     public Student saveStudent(@RequestBody Student student){
         return service.saveStudent(student);
     }
-
 }

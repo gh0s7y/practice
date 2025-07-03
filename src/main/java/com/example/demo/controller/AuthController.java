@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 public class AuthController {
     private final AdminService adminService;
-
     @PostMapping("/login")  // <- Должен быть POST!
     public Admin login(@RequestBody LoginRequest request) {
         return adminService.loginAdmin(request.getUsername(), request.getPassword());

@@ -24,6 +24,6 @@ public class StudentServiceImpl implements StudentService {
     @Override
     @Transactional
     public Student saveStudent(Student student) {
-        return repository.save(student);  // Сохранение в БД
+        return repository.save(student);
     }
 }

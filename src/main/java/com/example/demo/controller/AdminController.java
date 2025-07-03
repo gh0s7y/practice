@@ -24,5 +24,4 @@ public class AdminController {
     public Admin registerAdmin(@RequestBody Admin admin) {
         return service.saveAdmin(admin);
     }
-
 }
